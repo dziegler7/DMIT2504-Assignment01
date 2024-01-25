@@ -49,20 +49,58 @@ class MyApp extends StatelessWidget {
                 Transform.rotate(
                   angle: pi / 4,
                   child: Container(
-                  height: 100.0,
-                  width: 100.0,
-                  color: Colors.white,
-                  child: const Center(
-                    child: Text(
-                      'Container 2',
+                    height: 100.0,
+                    width: 100.0,
+                    color: Colors.white,
+                    child: const Center(
+                      child: Text(
+                        'Container 2',
+                      ),
                     ),
                   ),
                 ),
+              ],
+            ),
+            Column(
+              children: <Widget>[
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: Container(
+                      height: 100.0,
+                      width: 100.0,
+                      color: Colors.yellow,
+                      child: const Align(
+                        alignment: Alignment.bottomCenter,
+                        child: Text('Container 3'),
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: Container(
+                      height: 100.0,
+                      width: 100.0,
+                      color: Colors.blue,
+                      child: const Align(
+                        alignment: Alignment.centerRight,
+                        child: Text('Container 4'),
+                      ),
+                    ),
+                  ),
                 ),
               ],
             ),
-            Column(),
-            Column(),
+            Column(
+              children: <Widget>[
+                Container(
+                  height: 100.0,
+                  width: 100.0,
+                )
+              ],
+            ),
           ],
         ),
       ),
