@@ -96,8 +96,26 @@ class MyApp extends StatelessWidget {
             Column(
               children: <Widget>[
                 Container(
+                    height: 100.0,
+                    width: 100.0,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.black,
+                      border: Border.all(color: Colors.white, width: 3)
+                    ),
+                    child: const Center(
+                      child: Text('Container 5',
+                      style: TextStyle(color: Colors.white),
+                      ),
+                    )),
+                Container(
                   height: 100.0,
                   width: 100.0,
+                  color: Colors.red,
+                  child: const Align(
+                    alignment: Alignment.topCenter,
+                    child: Text('Container 6')
+                  )
                 )
               ],
             ),
